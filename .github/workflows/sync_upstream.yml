@@ -1,0 +1,13 @@
+name: Syncronize this fork with upstream repository.
+on:
+    schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+    sync:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@master
+            - uses: gh-forks/gha_sync_a_fork@main
+              with:
+                    upstream: neoclide/coc.nvim
