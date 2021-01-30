@@ -11,5 +11,5 @@ jobs:
             - uses: gh-forks/gha_sync_a_fork@main
               with:
                     upstream: neoclide/coc.nvim
-                    branch_in fork: release
+                    branch_in_fork: release
                     upstream_branch: release
